@@ -9,5 +9,8 @@ public class Rectangle {
     public static void main(String[] args) {
         double result = diagonal(3, 4);
         System.out.println("Diagonal of rectangle with length 3 and width 4 is " + result);
+
+        result = diagonal(2, 4);
+        System.out.println("Diagonal of rectangle with length 2 and width 4 is " + result);
     }
 }
