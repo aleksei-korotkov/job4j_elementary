@@ -46,6 +46,14 @@ class FactorialTest {
     }
 
     @Test
+    void whenCalculateFactorialFor4Then24() {
+        int number = 4;
+        int expected = 24;
+        int output = Factorial.calculate(number);
+        assertThat(output).isEqualTo(expected);
+    }
+
+    @Test
     void whenCalculateFactorialFor8Then40320() {
         int number = 8;
         int expected = 40320;
