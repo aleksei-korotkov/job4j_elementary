@@ -8,13 +8,13 @@ public class Frame {
                 boolean isTopOrBottomBorder = row == 0 || row == size - 1;
                 boolean isSideBorder = col == 0 || col == size - 1;
                 if (isTopOrBottomBorder && isSideBorder) {
-                    System.out.print("+"); // Углы рамки
+                    System.out.print("+");
                 } else if (isTopOrBottomBorder) {
-                    System.out.print("-"); // Верхняя и нижняя границы
+                    System.out.print("-");
                 } else if (isSideBorder) {
-                    System.out.print("|"); // Левые и правые границы
+                    System.out.print("|");
                 } else {
-                    System.out.print(" "); // Внутреннее пространство рамки
+                    System.out.print(" ");
                 }
             }
             System.out.println();
@@ -26,5 +26,7 @@ public class Frame {
         draw(3);
         System.out.println("Draw frame of size 5");
         draw(5);
+        System.out.println("Draw frame of size 10");
+        draw(10);
     }
 }
