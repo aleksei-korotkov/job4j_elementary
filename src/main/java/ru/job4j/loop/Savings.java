@@ -6,7 +6,7 @@ public class Savings {
         int years = 0;
         double total = 0;
         do {
-            double percentSum = total * (percent / 100);
+            double percentSum = (total * (percent / 100));
             total = total + percentSum;
             total = total + annualDeposit;
             years++;
