@@ -18,7 +18,7 @@ public class TwoNumberSum {
 
     public static int[] getIndexes2(int[] array, int target) {
         int i = 0;
-        int j = i + 1;
+        int j = array.length - 1;
         while (i < array.length - 1) {
                 if ((array[i] + array[j]) == target) {
                     int[] arrayOfIndex = new int[2];
@@ -26,12 +26,14 @@ public class TwoNumberSum {
                     arrayOfIndex[1] = j;
                     return  arrayOfIndex;
                 }
-                j++;
-                if (j >= array.length) {
-                    i++;
-                    j = i + 1;
+                if (i < j) {
+                    j--;
                 }
+                if (i == j) {
+                    i++;
+                    j = array.length - 1;
             }
-            return new int[0];
         }
+        return new int[0];
+    }
  }
