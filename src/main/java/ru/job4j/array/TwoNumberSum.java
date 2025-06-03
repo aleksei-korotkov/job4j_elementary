@@ -21,14 +21,9 @@ public class TwoNumberSum {
         int j = array.length - 1;
         while (i < array.length - 1) {
                 if ((array[i] + array[j]) == target) {
-                    int[] arrayOfIndex = new int[2];
-                    arrayOfIndex[0] = i;
-                    arrayOfIndex[1] = j;
-                    return  arrayOfIndex;
+                    return new int[] {i, j};
                 }
-                if (i < j) {
-                    j--;
-                }
+                j--;
                 if (i == j) {
                     i++;
                     j = array.length - 1;
