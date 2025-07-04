@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class MinDiapasonTest {
-
     @Test
     public void whenFirstMin() {
         int[] array = new int[] {-1, 0, 5, 10};
@@ -34,5 +33,4 @@ class MinDiapasonTest {
         int expected = 2;
         assertThat(result).isEqualTo(expected);
     }
-
 }

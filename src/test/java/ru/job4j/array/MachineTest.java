@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class MachineTest {
-
     @Test
     public void whenMoneyEqualsPrice() {
         int money = 100;
@@ -40,5 +39,4 @@ class MachineTest {
         int[] expected = {10, 5, 2, 1};
         assertThat(result).containsExactly(expected);
     }
-
 }
