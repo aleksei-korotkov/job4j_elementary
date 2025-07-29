@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class MaxTest {
+
     @Test
     public void whenFirstMaxFromTwoNumbers() {
         int first = 10;
